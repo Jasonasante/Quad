@@ -28,10 +28,13 @@ func QuadD(x, y int) {
 	if y > 1 {
 		z01.PrintRune('A')
 	}
+	if x == 1 && y > 1 {
+		z01.PrintRune('\n')
+	}
 	for a := 1; a < x-1 && y > 1; a++ {
 		z01.PrintRune('B')
 	}
-	if x > 1 {
+	if x > 1 && y > 1 {
 		z01.PrintRune('C')
 		z01.PrintRune('\n')
 	}
